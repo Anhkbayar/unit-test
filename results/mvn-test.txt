@@ -9,6 +9,9 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 [[1;34mINFO[m]   from pom.xml
 [[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
 [[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.12:prepare-agent[m [1m(default)[m @ [36munit-test[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/anka/.m2/repository/org/jacoco/org.jacoco.agent/0.8.12/org.jacoco.agent-0.8.12-runtime.jar=destfile=/home/anka/Codes/unit-test/target/jacoco.exec
+[[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mresources:3.3.1:resources[m [1m(default-resources)[m @ [36munit-test[0;1m ---[m
 [[1;34mINFO[m] skip non existing resourceDirectory /home/anka/Codes/unit-test/src/main/resources
 [[1;34mINFO[m] 
@@ -16,11 +19,10 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 [[1;34mINFO[m] Nothing to compile - all classes are up to date.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mresources:3.3.1:testResources[m [1m(default-testResources)[m @ [36munit-test[0;1m ---[m
-[[1;34mINFO[m] Copying 1 resource from src/test/resources to target/test-classes
+[[1;34mINFO[m] Copying 3 resources from src/test/resources to target/test-classes
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mcompiler:3.13.0:testCompile[m [1m(default-testCompile)[m @ [36munit-test[0;1m ---[m
-[[1;34mINFO[m] Recompiling the module because of [1mchanged source code[m.
-[[1;34mINFO[m] Compiling 2 source files with javac [debug release 17] to target/test-classes
+[[1;34mINFO[m] Nothing to compile - all classes are up to date.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32msurefire:3.3.0:test[m [1m(default-test)[m @ [36munit-test[0;1m ---[m
 [[1;34mINFO[m] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
@@ -29,17 +31,21 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 [[1;34mINFO[m]  T E S T S
 [[1;34mINFO[m] -------------------------------------------------------
 [[1;34mINFO[m] Running mn.edu.must.sqat.[1mAppTest[m
-[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.193 s -- in mn.edu.must.sqat.[1mAppTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 s -- in mn.edu.must.sqat.[1mAppTest[m
 [[1;34mINFO[m] Running mn.edu.must.sqat.[1mGradeCalculatorTest[m
-[[1;34mINFO[m] [1;32mTests run: [0;1;32m19[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.486 s -- in mn.edu.must.sqat.[1mGradeCalculatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m40[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.631 s -- in mn.edu.must.sqat.[1mGradeCalculatorTest[m
 [[1;34mINFO[m] 
 [[1;34mINFO[m] Results:
 [[1;34mINFO[m] 
-[[1;34mINFO[m] [1;32mTests run: 20, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] [1;32mTests run: 41, Failures: 0, Errors: 0, Skipped: 0[m
 [[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.12:report[m [1m(report)[m @ [36munit-test[0;1m ---[m
+[[1;34mINFO[m] Loading execution data file /home/anka/Codes/unit-test/target/jacoco.exec
+[[1;34mINFO[m] Analyzed bundle 'unit-test' with 3 classes
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time:  5.857 s
-[[1;34mINFO[m] Finished at: 2026-09-25T17:08:29+08:00
+[[1;34mINFO[m] Total time:  6.007 s
+[[1;34mINFO[m] Finished at: 2026-09-25T18:02:12+08:00
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m

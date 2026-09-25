@@ -5,8 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class GradeCalculatorTest {
     private final GradeCalculator calculator = new GradeCalculator();
@@ -76,6 +75,21 @@ public class GradeCalculatorTest {
         Grade grade = new Grade(att, lab, quiz1, quiz2, exam);
         double total = calculator.totalScore(grade);
         assertEquals(expectedTotal, total);
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(
+            resources = "/grade_validate.csv",
+            numLinesToSkip = 1
+    )
+    void validateGrade(
+            double att, double lab, double quiz1, double quiz2, double exam, String expected
+    ){
+        if (expected.equals("VALID")) {
+            assertDoesNotThrow(() -> new Grade(att, lab, quiz1, quiz2, exam) );
+        } else { assertThrows(
+                IllegalArgumentException.class, () -> new Grade(att, lab, quiz1, quiz2, exam)
+        ); }
     }
 
 }

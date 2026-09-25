@@ -82,6 +82,7 @@ public class GradeCalculatorTest {
             resources = "/grade_validate.csv",
             numLinesToSkip = 1
     )
+    @DisplayName("Нийт дүн зөв шалгагдах ёстой")
     void validateGrade(
             double att, double lab, double quiz1, double quiz2, double exam, String expected
     ){
@@ -91,5 +92,4 @@ public class GradeCalculatorTest {
                 IllegalArgumentException.class, () -> new Grade(att, lab, quiz1, quiz2, exam)
         ); }
     }
-
 }
